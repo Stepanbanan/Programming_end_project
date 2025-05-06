@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+html, body {
+    margin: 0;
+    font-family: "Noto Serif", serif;
+    background-color: #f9f9f9;
+}
+
+button, ::placeholder{
+    font-family: "Noto Serif", serif;
+    font-size: 18px;
+}
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #eee;
+    padding: 5px;
+    text-align: center;
+    color: #666;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p{
+    font-size: 14px;
+    color: #3333339b;
+}
+
+.error-message {
+    color: red;
+    font-size: 16px;
+    margin-top: 10px;
+}
+/*navigācijas josla*/
+.navbar {
+    background-color: #1d1f5a;
+    color: white;
+    padding: 20px 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+#iziet:hover{
+    text-decoration: none;
+}
+/* galvenā lapa */
+.welcome-header {
+    background-color: #413392;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 750px;
+    margin: 0 auto 20px;
+    font-size: 14px;
+}
+
+h2{
+    font-size: 24px;
+}
+
+p{    
+    font-size: 18px;
+}
+
+.intro {
+    background-color: #fff;
+    padding: 15px 40px 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.intro p{
+    text-align: left;
+    text-indent: 20px;
+}
+/* pogas */
+
+.btn {
+    background-color: #4c3f9d;
+    color: white;
+    padding: 8px 18px;
+    text-decoration: none;
+    margin: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 18px;
+}
+
+.btn:hover {
+    background-color: #33267e;
+}
+/* autentifikācijas logi */
+.auth-container {
+    width: 400px;
+    height: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.auth-header {
+    font-size: 20px;
+    color: #1d1f5a;
+    text-align: center;
+}
+
+.auth-container-form {
+    width: 300px;
+    height: 250px;
+    margin: 30px auto;
+    padding: 30px 25px 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+    margin-top: 30px;
+    align-items: center;
+}
+
+input.input-field {
+    width: 260px;
+    height: 16px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.auth-form button {
+    width: 160px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #5b4eaf;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.auth-form input:focus {
+    border-color: #1d1f5af1;
+    outline: none;
+}
+
+form button:hover {
+    background-color: #1d1f5af1;
+    cursor: pointer;
+}
+/* sarakstu pogas */
+.add-list-btn {
+    background-color: #3f3381;
+    color: white;
+    padding: 15px 22px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.add-list-btn:hover {
+    background-color: #1d1f5af1;
+    cursor: pointer;
+}
+
+form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3f3381;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    
+}
+/* saraksti */
+.item-list h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-list {
+    background-color: #fff;
+    padding: 5px 20px 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.item-list ul {
+    list-style-type: none;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.item-list li {
+    display: flex;
+    justify-content:space-between;
+    align-items: center; 
+    margin-bottom: 10px;
+    border:1px solid #33333381;
+    border-radius: 5px;
+    width: 660px;
+    padding: 5px 12px 5px;
+    margin: 0 auto 10px;
+    font-size: 20px;
+}
+
+.item-list .delete-list {
+    color: #e74c3c;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.item-list .delete-prod {
+    color: #e74c3c;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    justify-content:flex-end;
+}
+
+input[type="text"].list-name, input[type="text"].prod-name {
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 80%;
+    margin-bottom: 10px;
+}
+/* logs ar saraksta izveidi */
+#modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
+}
+
+.modal-content {
+    position: relative;
+    overflow: visible;
+    background-color: #fefefe;
+    margin: 60px auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+span.close{
+    color: red;
+    font-size: 18px;
+    top: 10px;
+    right: 15px;
+    position: absolute;
+}
+
+span.close:hover {
+    cursor: pointer;
+}
+
+span.sveiki{
+    font-size: 20px;
+    margin-right: 15px;
+}
